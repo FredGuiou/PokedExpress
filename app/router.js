@@ -3,7 +3,6 @@ const express = require('express');
 
 // on importe nos controllers
 const mainController = require('./controllers/main.Controller');
-const adminController = require('./controllers/admin.Controller');
 
 //On créé notre routeur express.
 const router = express.Router();

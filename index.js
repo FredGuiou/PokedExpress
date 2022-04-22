@@ -18,7 +18,7 @@ app.set("view engine", "ejs");
 // et le répertoire des views
 app.set("views", `${__dirname}/app/views`);
 
-//On sert les fichiers statiques qui sont dans public
+//On sert les fichiers statiques qui sont dans "public"
 app.use(express.static("public"));
 
 //Lancement du router

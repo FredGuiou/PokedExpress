@@ -1,5 +1,5 @@
 //On appelle notre dataMapper dans une constante
-const dataMapper = require('../data/dataMapper');
+const dataMapper = require('../dataMappers/dataMapper');
 
 //On crée notre mainController ainsi que la méthode pour afficher la homePage.
 const mainController = {

@@ -1,0 +1,14 @@
+<%- include('./partials/header') %>
+
+<main>
+    <div class="cards">
+        <% for(const element of pokemon) { %>
+        <div class="card">
+            <img src="img/<%= element.numero %>.png" alt="<%= element.nom %>">
+            #<%= element.numero %> <%= element.nom %>
+        </div>
+        <% } %>
+    </div>
+</main>
+
+<%- include('./partials/footer') %>
