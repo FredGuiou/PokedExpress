@@ -1,0 +1,52 @@
+<%- include('./partials/header') %>
+
+<main>
+    <h2>Détails de <%= pokemon.nom %></h2>
+
+    <div class="details">
+        <img src="/img/<%= pokemon.numero %>.png" alt="<%= pokemon.nom %>">
+        <div class="card">
+            <h3>#<%= pokemon.numero %> <%= pokemon.nom %></h3>
+
+
+            <h4>Statistiques</h4>
+
+            <ul class="card__stats">
+                <li>
+                    <span class="stats__name">PV</span>
+                    <span class="stats__value"><%= pokemon.pv %></span>
+                    <progress max="255" value="<%= pokemon.pv %>"><%= pokemon.pv %>/255</progress>
+                </li>
+                <li>
+                    <span class="stats__name">Attaque</span>
+                    <span class="stats__value"><%= pokemon.attaque %></span>
+                    <progress max="255" value="<%= pokemon.attaque %>"><%= pokemon.attaque %>/255</progress>
+                </li>
+                <li>
+                    <span class="stats__name">Défense</span>
+                    <span class="stats__value"><%= pokemon.defense %></span>
+                    <progress max="255" value="<%= pokemon.defense %>"><%= pokemon.defense %>/255</progress>
+                </li>
+                <li>
+                    <span class="stats__name">Attaque Spé.</span>
+                    <span class="stats__value"><%= pokemon.attaque_spe %></span>
+                    <progress max="255" value="<%= pokemon.attaque_spe %>"><%= pokemon.attaque_spe %>/255</progress>
+                </li>
+                <li>
+                    <span class="stats__name">Défense Spé.</span>
+                    <span class="stats__value"><%= pokemon.defense_spe %></span>
+                    <progress max="255" value="<%= pokemon.defense_spe %>"><%= pokemon.defense_spe %>/255</progress>
+                </li>
+                <li>
+                    <span class="stats__name">Vitesse</span>
+                    <span class="stats__value"><%= pokemon.vitesse %></span>
+                    <progress max="255" value="<%= pokemon.vitesse %>"><%= pokemon.vitesse %>/255</progress>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="back" href="/">Retour à la liste</a>
+</main>
+
+<%- include('./partials/footer') %>

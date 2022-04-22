@@ -7,6 +7,13 @@ const dataMapper = {
     getAllPokemon: async () => {
         const result = await client.query(`SELECT * FROM "pokemon"`);
         return result.rows;
+    },
+
+    //On crée une seconde méthode qui permet d'afficher le détail d'un pokemon (getOnePokemon).
+    getOnePokemon: async (numero) => {
+        const result = await client.query(`SELECT * FROM "pokemon" WHERE "numero" = ${numero}`);
+        //On retourne le résultat avec [0] en paramètre car on attend une seule réponse.
+        return result.rows[0];
     }
 };
 
