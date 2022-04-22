@@ -1,0 +1,29 @@
+{
+  "name": "pokedexpress",
+  "version": "1.0.0",
+  "description": "Pokedex",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Cassini/S04E10-pokedEXpress-FredGuiou.git"
+  },
+  "author": "Fred GUIOU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Cassini/S04E10-pokedEXpress-FredGuiou/issues"
+  },
+  "homepage": "https://github.com/O-clock-Cassini/S04E10-pokedEXpress-FredGuiou#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "node-dev": "^7.4.3",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  }
+}
