@@ -4,9 +4,9 @@
     <div class="cards">
         <% for(const element of pokemon) { %>
         <div class="card">
-            <a href="/detail/<%= element.numero %>">
+            <a class="name-link" href="/detail/<%= element.numero %>">
             <img src="img/<%= element.numero %>.png" alt="<%= element.nom %>">
-            #<%= element.numero %> <%= element.nom %>
+            <span class="Pokemon-ref">#<%= element.numero %> <%= element.nom %></span>
             </a>
         </div>
         <% } %>
